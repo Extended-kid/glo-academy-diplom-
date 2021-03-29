@@ -1077,6 +1077,12 @@ input:focus {
   transition: left 0.5s ease;
 }
 
+@-moz-document url-prefix() {
+  .mobile__list {
+    background-color: rgba(24, 59, 86, 0.9);
+  }
+}
+
 .mobile__list_visible {
   left: 0;
 }

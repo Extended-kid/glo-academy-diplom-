@@ -13,6 +13,8 @@
     backdrop-filter: blur(10px)
     padding-left: 30px
     transition: left 0.5s ease
+    @-moz-document url-prefix()
+      background-color: rgba($text-dark, 0.9)
     &_visible
       left: 0
     &-drop
