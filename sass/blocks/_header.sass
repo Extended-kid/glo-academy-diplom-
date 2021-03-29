@@ -8,6 +8,7 @@
   flex-direction: column
   justify-content: flex-start
   align-items: center
+  position: relative
   &__title
     margin-top: 116px
     margin-bottom: 45px
@@ -101,8 +102,24 @@
     max-width: 423px
     justify-content: start
     align-items: center
+    &-drop
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      padding: 0
+      display: flex
+      align-items: end
+      flex-wrap: wrap
+      background-color: rgba(white, 0.05)
+      transition: opacity 0.2s ease
   &__item
     margin-right: 31px
+    &_hover
+      position: relative
+      &:hover ul
+        opacity: 1
+        visibility: visible
+        text-decoration: none
   &__link
     color: $text-white
     text-decoration: none
@@ -110,6 +127,8 @@
     font-weight: 600
     font-size: 16px
     line-height: 22px
+    &_drop
+      color: $bg
   &__button
     max-width: 131px
     min-height: 48px
