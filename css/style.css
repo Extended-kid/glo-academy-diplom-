@@ -1049,7 +1049,7 @@ a {
   color: #5A7184;
   background-image: url(../img/verified-light.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 16px;
   background-position: left 53%;
 }
 
