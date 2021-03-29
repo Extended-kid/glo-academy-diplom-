@@ -632,6 +632,10 @@ input:focus {
   text-decoration: none;
 }
 
+.header__item-drop {
+  padding: 5px;
+}
+
 .header__link {
   color: #FFFFFF;
   text-decoration: none;
@@ -1121,6 +1125,10 @@ input:focus {
   opacity: 1;
   visibility: visible;
   text-decoration: none;
+}
+
+.mobile__item-drop {
+  padding: 5px;
 }
 
 .mobile__link {
