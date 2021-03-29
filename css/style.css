@@ -490,8 +490,8 @@ a {
 }
 
 .hero__title {
-  margin-top: 116px;
-  margin-bottom: 45px;
+  margin-top: 120px;
+  margin-bottom: 41px;
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
@@ -624,7 +624,7 @@ a {
 }
 
 .header__item {
-  margin-right: 31px;
+  margin-right: 32px;
 }
 
 .header__item_hover {
@@ -670,7 +670,7 @@ a {
 
 .header__down {
   position: absolute;
-  right: -14px;
+  left: 80px;
   top: 50%;
   transform: translateY(-45%);
   padding: 3px;
@@ -741,7 +741,6 @@ a {
   }
   .hero__item:nth-child(3) {
     margin-top: 11px;
-    flex-basis: 100%;
   }
   .hero__title {
     font-size: 32px;
@@ -771,7 +770,7 @@ a {
     padding: 13px 0;
   }
   .hero__popular-tags {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
   }
 }
 
