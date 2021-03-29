@@ -1,0 +1,116 @@
+.featured
+  display: grid
+  grid-template-columns: repeat(2, 1fr )
+  width: 1140px
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+  border-radius: 16px
+  overflow: hidden
+
+  &__photo
+    height: 100%
+    width: 100%
+    &>img
+      object-fit: cover
+      height: 100%
+      width: 100%
+  &__offer
+    padding: 31px 48px 32px 32px
+    background-color: #fff
+    border: 1px solid $bg
+    border-left: none
+  &__label
+    display: block
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: rgba($lbl-clr,0.1)
+    color: $lbl-clr
+    width: 126px
+    height: 32px
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    border-radius: 2000px
+    margin-bottom: 16px
+  &__title
+    max-width: 480px
+    max-height: 96px
+    overflow: auto
+    margin-bottom: 20px
+    font-size: 31px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $text-dark
+  &__description
+    display: block
+    max-width: 420px
+    max-height: 64px
+    font-size: 18px
+    line-height: 32px
+    color: $text-main
+    text-overflow: ellipsis
+    margin-bottom: 43px
+@media   ( max-width: 1200px )
+  .featured
+    max-width: 950px
+    grid-template-columns: 1fr max-content
+  @media   ( max-width: 992px )
+    .featured
+      max-width: 700px
+      grid-template-columns: 1fr
+      grid-template-rows: max-content 1fr
+      &__photo
+        max-width: 100%
+        height: 300px
+        &>img
+          object-fit: cover
+      &__offer
+        padding: 30px 24px
+        border: 1px solid $bg
+        border-top: none
+      &__label
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+      &__title
+        max-width: 100%
+      &__description
+        max-width: 100%
+  @media   ( max-width: 768px )
+    .featured
+      max-width: 540px
+      &__photo
+        height: 250px
+  @media   ( max-width: 600px )
+    .featured
+      max-width: 100%
+      &__label
+        margin-bottom: 8px
+      &__title
+        max-height: 144px
+        font-size: 20px
+        line-height: 24px
+      &__description
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 24px
+        max-height: 72px
+      &__photo
+        height: 200px
+  @media   ( max-width: 320px )
+    .container_mobile
+      max-width: 288px
+    .featured
+      max-width: 100%
+      &__photo
+        height: 160px
+      &__offer
+        padding: 24px 20px
+      &__label
+        text-transform: uppercase
+        width: 135px
+        height: 24px
+        font-size: 14px
+        line-height: 20px
+      &__title
+        margin-bottom: 0
