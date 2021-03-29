@@ -570,11 +570,11 @@ input:focus {
   line-height: 20px;
 }
 
-.hero__item:nth-child(2) > button {
+.hero__item:nth-child(2) > a {
   padding: 5px 16px;
 }
 
-.hero__item__item:nth-child(3) > button {
+.hero__item__item:nth-child(3) > a {
   padding: 5px 17px;
 }
 
