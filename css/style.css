@@ -354,7 +354,9 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+ol {
   margin: 0;
 }
 
@@ -411,10 +413,6 @@ select {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -435,16 +433,118 @@ body {
   border: none;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .hero {
-  height: 742px;
+  height: 700px;
   background-image: url(../img/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero__title {
+  margin-top: 116px;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+.hero__form {
+  width: 100%;
+  max-width: 760px;
+  min-height: 56px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.hero__input {
+  width: 100%;
+  height: 100%;
+  padding: 17px 52px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.hero__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+  background-color: #1565D8;
+  color: #FFFFFF;
+  padding: 9px 21px;
+  max-width: 94px;
+  min-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.hero__popular-tags {
+  display: flex;
+  width: 100%;
+  max-width: 760px;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-right: 13px;
+  color: #FFFFFF;
+}
+
+.hero__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__tag {
+  padding: 5px 18px;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header {
+  width: 100%;
 }
 
 .header__navbar {
   padding: 26px 0;
-  padding-top: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
