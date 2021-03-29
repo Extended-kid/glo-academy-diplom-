@@ -568,6 +568,7 @@ input:focus {
   margin-right: 20px;
   font-size: 14px;
   line-height: 20px;
+  text-decoration: none;
 }
 
 .hero__item:nth-child(2) > a {
