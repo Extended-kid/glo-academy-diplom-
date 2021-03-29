@@ -1,12 +1,12 @@
 .mobile
   &__list
-    display: flex
     flex-direction: column
     max-width: 100%
     justify-content: start
     align-items: start
     position: absolute
     left: 100%
+    display: none
     width: 100%
     z-index: 1000
     background-color: rgba($text-dark, 0.9)
@@ -15,6 +15,7 @@
     transition: left 0.5s ease
     &_visible
       left: 0
+      display: flex
     &-drop
       opacity: 0
       visibility: hidden

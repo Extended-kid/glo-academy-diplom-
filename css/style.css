@@ -1062,13 +1062,13 @@ input:focus {
 }
 
 .mobile__list {
-  display: flex;
   flex-direction: column;
   max-width: 100%;
   justify-content: start;
   align-items: start;
   position: absolute;
   left: 100%;
+  display: none;
   width: 100%;
   z-index: 1000;
   background-color: rgba(24, 59, 86, 0.9);
@@ -1079,6 +1079,7 @@ input:focus {
 
 .mobile__list_visible {
   left: 0;
+  display: flex;
 }
 
 .mobile__list-drop {
