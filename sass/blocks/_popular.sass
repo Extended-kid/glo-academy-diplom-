@@ -1,7 +1,18 @@
 .popular
-  margin-top: 302px
+  padding-top: 302px
+  padding-bottom: 96px
+  @media   ( max-width: 992px )
+    padding-top: 590px
+  @media   ( max-width: 768px )
+    padding-top: 550px
+  @media   ( max-width: 600px )
+    padding-top: 350px
+  @media   ( max-width: 320px )
+    padding-top: 453px
   &__container
     position: relative
+    @media   ( max-width: 330px )
+      max-width: 288px
   &__title
     font-weight: bold
     font-size: 36px
@@ -9,6 +20,13 @@
     letter-spacing: 0.2px
     margin-bottom: 18px
     color: $text-dark
+    @media   ( max-width: 600px )
+      margin-bottom: 14px
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+    @media   ( max-width: 320px )
+      margin-bottom: 12px
   &__description
     font-size: 18px
     line-height: 32px
@@ -17,11 +35,21 @@
     max-height: 71px
     overflow-y: auto
     margin-bottom: 44px
+    @media   ( max-width: 600px )
+      margin-bottom: 30px
+      max-height: 90px
+      font-size: 11px
+      line-height: 24px
+      text-align: center
+    @media   ( max-width: 320px )
+      margin-bottom: 33px
   &__button
     position: absolute
     right: 0
     top: 64px
-    padding: 12px 21px
+    padding: 12px 20px
+    width: 183px
+    height: 48px
     font-weight: bold
     font-size: 16px
     line-height: 22px
@@ -30,8 +58,23 @@
     border: 2px solid $btn-clr
     background-color: transparent
     text-decoration: none
+    @media   ( max-width: 992px )
+      top: auto
+      bottom: -80px
+      left: 50%
+      right: auto
+      transform: translateX(-50%)
+    @media   ( max-width: 320px )
+      width: 172px
+      height: 40px
+      padding: 7px 18px 7px 16px
+      font-size: 16px
+      line-height: 22px
+      bottom: -72px
     & > img
       margin-left: 11px
+      @media   ( max-width: 320px )
+        margin-left: 8px
   &__bg
     position: absolute
     left: 0
@@ -45,18 +88,49 @@
   &__cards
     display: flex
     justify-content: space-between
+    @media   ( max-width: 992px )
+      flex-wrap: wrap
+      flex-direction: column
+      gap: 35px
+    @media   ( max-width: 418px )
+      gap: 16px
   &__link
     display: block
     text-decoration: none
+    @media  ( max-width: 1200px )
+      flex-basis: 48.5%
+    @media   ( max-width: 992px )
+      flex-basis: 100%
     &:nth-child(1)
       & .popular__card-name
         margin-top: 341px
         margin-bottom: 77px
+        @media   ( max-width: 992px )
+          margin-top: 281px
+          margin-bottom: 47px
+        @media   ( max-width: 600px )
+          margin-top: 200px
+          margin-bottom: 48px
+        @media   ( max-width: 500px )
+          margin-top: 170px
+        @media   ( max-width: 418px )
+          margin-top: 144px
     &:nth-child(2)
       & .popular__card-name
         margin-top: 333px
         margin-bottom: 37px
         margin-left: -2px
+        @media   ( max-width: 992px )
+          margin-top: 272px
+          margin-bottom: 17px
+          margin-left: 0
+        @media   ( max-width: 600px )
+          margin-top: 191px
+          margin-bottom: 7px
+        @media   ( max-width: 500px )
+          margin-top: 161px
+        @media   ( max-width: 418px )
+          margin-top: 161px
   &__card
     max-width: 555px
     min-height: 600px
@@ -69,6 +143,17 @@
     border-radius: 16px
     overflow: hidden
     padding: 0px 48px 44px
+    @media  ( max-width: 1200px )
+      max-height: 100%
+    @media   ( max-width: 992px )
+      max-width: 100%
+      min-height: 400px
+    @media   ( max-width: 500px )
+      padding: 20px
+      padding-bottom: 22px
+    @media   ( max-width: 418px )
+      max-height: 320px
+      min-height: 320px
     &::before
       content: ""
       position: absolute
@@ -95,6 +180,13 @@
     border-radius: 2000px
     top: 32px
     left: 32px
+    @media   ( max-width: 500px )
+      font-size: 14px
+      line-height: 20px
+      width: 126px
+      height: 24px
+      top: 20px
+      left: 20px
   &__card-name
     font-weight: bold
     font-size: 36px
@@ -102,3 +194,9 @@
     letter-spacing: 0.2px
     max-width: 100%
     color: $text-white
+    @media   ( max-width: 500px )
+      font-size: 28px
+      line-height: 32px
+    @media   ( max-width: 418px )
+      font-size: 20px
+      line-height: 24px

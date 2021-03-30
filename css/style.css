@@ -818,13 +818,14 @@ a {
   grid-template-columns: repeat(2, 1fr);
   width: 1140px;
   box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
-  border-radius: 16px;
-  overflow: hidden;
 }
 
 .featured__photo {
   height: 100%;
   width: 100%;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  overflow: hidden;
 }
 
 .featured__photo > img {
@@ -838,6 +839,8 @@ a {
   background-color: #fff;
   border: 1px solid #E5EAF4;
   border-left: none;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .featured__label {
@@ -894,6 +897,9 @@ a {
   .featured__photo {
     max-width: 100%;
     height: 300px;
+    border-radius: 0;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
   }
   .featured__photo > img {
     object-fit: cover;
@@ -902,6 +908,9 @@ a {
     padding: 30px 24px;
     border: 1px solid #E5EAF4;
     border-top: none;
+    border-radius: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
   }
   .featured__label {
     font-weight: 600;
@@ -959,7 +968,7 @@ a {
     height: 160px;
   }
   .featured__offer {
-    padding: 24px 20px;
+    padding: 24px 19px;
   }
   .featured__label {
     text-transform: uppercase;
@@ -1354,11 +1363,42 @@ a {
 }
 
 .popular {
-  margin-top: 302px;
+  padding-top: 302px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 992px) {
+  .popular {
+    padding-top: 590px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular {
+    padding-top: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular {
+    padding-top: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .popular {
+    padding-top: 453px;
+  }
 }
 
 .popular__container {
   position: relative;
+}
+
+@media (max-width: 330px) {
+  .popular__container {
+    max-width: 288px;
+  }
 }
 
 .popular__title {
@@ -1368,6 +1408,21 @@ a {
   letter-spacing: 0.2px;
   margin-bottom: 18px;
   color: #183B56;
+}
+
+@media (max-width: 600px) {
+  .popular__title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .popular__title {
+    margin-bottom: 12px;
+  }
 }
 
 .popular__description {
@@ -1380,11 +1435,29 @@ a {
   margin-bottom: 44px;
 }
 
+@media (max-width: 600px) {
+  .popular__description {
+    margin-bottom: 30px;
+    max-height: 90px;
+    font-size: 11px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .popular__description {
+    margin-bottom: 33px;
+  }
+}
+
 .popular__button {
   position: absolute;
   right: 0;
   top: 64px;
-  padding: 12px 21px;
+  padding: 12px 20px;
+  width: 183px;
+  height: 48px;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -1395,8 +1468,35 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 992px) {
+  .popular__button {
+    top: auto;
+    bottom: -80px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 320px) {
+  .popular__button {
+    width: 172px;
+    height: 40px;
+    padding: 7px 18px 7px 16px;
+    font-size: 16px;
+    line-height: 22px;
+    bottom: -72px;
+  }
+}
+
 .popular__button > img {
   margin-left: 11px;
+}
+
+@media (max-width: 320px) {
+  .popular__button > img {
+    margin-left: 8px;
+  }
 }
 
 .popular__bg {
@@ -1416,9 +1516,35 @@ a {
   justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+  .popular__cards {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 418px) {
+  .popular__cards {
+    gap: 16px;
+  }
+}
+
 .popular__link {
   display: block;
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .popular__link {
+    flex-basis: 48.5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .popular__link {
+    flex-basis: 100%;
+  }
 }
 
 .popular__link:nth-child(1) .popular__card-name {
@@ -1426,10 +1552,63 @@ a {
   margin-bottom: 77px;
 }
 
+@media (max-width: 992px) {
+  .popular__link:nth-child(1) .popular__card-name {
+    margin-top: 281px;
+    margin-bottom: 47px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular__link:nth-child(1) .popular__card-name {
+    margin-top: 200px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular__link:nth-child(1) .popular__card-name {
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 418px) {
+  .popular__link:nth-child(1) .popular__card-name {
+    margin-top: 144px;
+  }
+}
+
 .popular__link:nth-child(2) .popular__card-name {
   margin-top: 333px;
   margin-bottom: 37px;
   margin-left: -2px;
+}
+
+@media (max-width: 992px) {
+  .popular__link:nth-child(2) .popular__card-name {
+    margin-top: 272px;
+    margin-bottom: 17px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular__link:nth-child(2) .popular__card-name {
+    margin-top: 191px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular__link:nth-child(2) .popular__card-name {
+    margin-top: 161px;
+  }
+}
+
+@media (max-width: 418px) {
+  .popular__link:nth-child(2) .popular__card-name {
+    margin-top: 161px;
+  }
 }
 
 .popular__card {
@@ -1444,6 +1623,33 @@ a {
   border-radius: 16px;
   overflow: hidden;
   padding: 0px 48px 44px;
+}
+
+@media (max-width: 1200px) {
+  .popular__card {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .popular__card {
+    max-width: 100%;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular__card {
+    padding: 20px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (max-width: 418px) {
+  .popular__card {
+    max-height: 320px;
+    min-height: 320px;
+  }
 }
 
 .popular__card::before {
@@ -1476,6 +1682,17 @@ a {
   left: 32px;
 }
 
+@media (max-width: 500px) {
+  .popular__label {
+    font-size: 14px;
+    line-height: 20px;
+    width: 126px;
+    height: 24px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
 .popular__card-name {
   font-weight: bold;
   font-size: 36px;
@@ -1483,5 +1700,19 @@ a {
   letter-spacing: 0.2px;
   max-width: 100%;
   color: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+  .popular__card-name {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 418px) {
+  .popular__card-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

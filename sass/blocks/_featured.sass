@@ -3,12 +3,13 @@
   grid-template-columns: repeat(2, 1fr )
   width: 1140px
   box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
-  border-radius: 16px
-  overflow: hidden
 
   &__photo
     height: 100%
     width: 100%
+    border-top-left-radius: 16px
+    border-bottom-left-radius: 16px
+    overflow: hidden
     &>img
       object-fit: cover
       height: 100%
@@ -18,6 +19,8 @@
     background-color: #fff
     border: 1px solid $bg
     border-left: none
+    border-top-right-radius: 16px
+    border-bottom-right-radius: 16px
   &__label
     display: block
     display: flex
@@ -62,12 +65,18 @@
       &__photo
         max-width: 100%
         height: 300px
+        border-radius: 0
+        border-top-right-radius: 16px
+        border-top-left-radius: 16px
         &>img
           object-fit: cover
       &__offer
         padding: 30px 24px
         border: 1px solid $bg
         border-top: none
+        border-radius: 0
+        border-bottom-right-radius: 16px
+        border-bottom-left-radius: 16px
       &__label
         font-weight: 600
         font-size: 14px
@@ -105,7 +114,7 @@
       &__photo
         height: 160px
       &__offer
-        padding: 24px 20px
+        padding: 24px 19px
       &__label
         text-transform: uppercase
         width: 135px
