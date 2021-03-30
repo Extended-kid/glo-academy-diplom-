@@ -70,5 +70,18 @@ $(document).ready(function () {
 		) {
 			closeModal2();
 		}
-	});
+  });
+  
+
+  $('.form').each(function() {
+    $(this).validate({
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+    }
+  }
+  );
+  })
 });
