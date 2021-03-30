@@ -565,7 +565,7 @@ a {
 }
 
 .hero__tag {
-  padding: 5px 18px;
+  padding: 5px 17px;
   border-radius: 4px;
   border: 1px solid #FFFFFF;
   background-color: transparent;
@@ -577,7 +577,7 @@ a {
 }
 
 .hero__item:nth-child(2) > a {
-  padding: 5px 16px;
+  padding: 5px 17px;
 }
 
 .hero__item__item:nth-child(3) > a {
