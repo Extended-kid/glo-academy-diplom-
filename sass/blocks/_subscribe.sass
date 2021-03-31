@@ -1,0 +1,149 @@
+.subscribe
+  margin-top: -1px
+  padding-top: 10px
+  padding-bottom: 96px
+  background-color: $footer-bg
+  @media screen and ( max-width: 400px  )
+    padding-bottom: 0
+    margin-top: -25px
+    padding-top: 0
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__mail
+    max-width: 555px
+    padding: 58px 0 92px
+    display: flex
+    flex-direction: column
+    justify-content: start
+    @media screen and ( max-width: 1200px  )
+      padding-bottom: 0
+    @media screen and ( max-width: 992px  )
+      padding: 0
+    @media screen and ( max-width: 768px  )
+      max-width: 100%
+  &__title
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $text-white
+    max-width: 100%
+    margin-bottom: 48px
+    @media screen and ( max-width: 768px  )
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 24px
+    @media screen and ( max-width: 400px  )
+      margin-bottom: 8px
+  &__form
+    display: flex
+    justify-content: space-between
+    max-width: 494px
+    min-height: 56px
+    margin-bottom: 24px
+    @media screen and ( max-width: 768px  )
+      margin-bottom: 0
+    @media screen and ( max-width: 600px  )
+      flex-wrap: wrap
+  &__input
+    padding: 17px 16px
+    color: $text-main
+    background-color: #fff
+    font-size: 16px
+    line-height: 22px
+    border-radius: 8px
+    margin-right: 8px
+    width: 100%
+    @media screen and ( max-width: 600px  )
+      height: 56px
+      width: 100%
+      margin-bottom: 16px
+      margin-right: 0
+    @media screen and ( max-width: 400px  )
+      height: 48px
+      padding-top: 16px
+      margin-bottom: 12px
+    &:placeholder
+      mix-blend-mode: normal
+      opacity: 0.75
+
+  &__button
+    border-radius: 8px
+    width: 100%
+    background-color: $btn-clr
+    color: $text-white
+    max-width: 166px
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    @media screen and ( max-width: 600px  )
+      height: 56px
+      max-width: none
+      width: 100%
+    @media screen and ( max-width: 400px  )
+      height: 48px
+      font-size: 16px
+      line-height: 22px
+  &__description
+    font-size: 16px
+    line-height: 28px
+    color: $text-main
+    width: 100%
+    @media screen and ( max-width: 400px  )
+      font-size: 14px
+      line-height: 27px
+      height: 146px
+  &__card
+    position: relative
+    margin-right: -30px
+    @media screen and ( max-width: 1330px  )
+      margin-right: 0
+    @media screen and ( max-width: 992px  )
+      display: none
+  &__base
+    position: absolute
+    @media screen and ( max-width: 1260px  )
+      display: none
+    &_left
+      border-radius: 16px
+      bottom: 0
+      left: -161px
+    &_right
+      top: 42px
+      right: -51px
+  &__best
+    position: relative
+    max-width: 466px
+    background-color: #fff
+    border-radius: 16px
+    padding: 8px 8px 29px 8px
+    z-index: 100
+    @media screen and ( max-width: 1200px  )
+      padding-bottom: 15px
+  &__img
+    width: 100%
+    max-height: 212px
+    object-fit: cover
+    border-radius: 16px
+    margin-bottom: 30px
+    @media screen and ( max-width: 1200px  )
+      margin-bottom: 15px
+  &__card
+    &-title
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      width: 370px
+      margin-bottom: 12px
+      color: $text-dark
+      margin-left: 26px
+      @media screen and ( max-width: 1200px  )
+        font-size: 20px
+        margin-bottom: 8px
+    &-description
+      font-size: 18px
+      line-height: 32px
+      color: $text-main
+      min-height: 61px
+      margin-left: 26px
+      width: 330px
