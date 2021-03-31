@@ -1,0 +1,108 @@
+.case
+  padding-bottom: 96px
+  @media   ( max-width: 320px )
+    padding-top: 21px
+    padding-bottom: 83px
+  &__container
+    position: relative
+    @media   ( max-width: 330px )
+      max-width: 288px
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    margin-bottom: 18px
+    color: $text-dark
+    @media   ( max-width: 600px )
+      margin-bottom: 2px
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+    @media   ( max-width: 320px )
+      margin-bottom: 12px
+  &__description
+    font-size: 18px
+    line-height: 32px
+    color: $text-main
+    max-width: 668px
+    max-height: 71px
+    overflow-y: auto
+    margin-bottom: 48px
+    @media   ( max-width: 600px )
+      margin-bottom: 13px
+      max-height: 45px
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+    @media   ( max-width: 320px )
+      margin-bottom: 12px
+  &__button
+    position: absolute
+    right: 0
+    top: 48px
+    padding: 12px 20px
+    width: 183px
+    height: 48px
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $btn-clr
+    border-radius: 8px
+    border: 2px solid $btn-clr
+    background-color: transparent
+    text-decoration: none
+    @media   ( max-width: 992px )
+      top: auto
+      bottom: -80px
+      left: 49%
+      right: auto
+      transform: translateX(-50%)
+    @media   ( max-width: 320px )
+      width: 172px
+      height: 40px
+      padding: 7px 18px 7px 16px
+      font-size: 16px
+      line-height: 22px
+      bottom: -67px
+      transform: translateX(-51%)
+    & > img
+      margin-left: 11px
+      @media   ( max-width: 320px )
+        margin-left: 8px
+  &__btn
+    position: absolute
+    z-index: 50
+    top: 50%
+    @media   ( max-width: 992px )
+      top: 44.1%
+    @media   ( max-width: 992px )
+      top: 250px
+      width: 40px
+      height: 40px
+    @media   ( max-width: 600px )
+      top: 200px
+    @media   ( max-width: 320px )
+      top: 160px
+    &:focus
+      outline: none
+    &_prev
+      left: 0
+      transform: translate(-50%, -50%)
+      @media   ( max-width: 600px )
+        transform: translate(-35%, -50%)
+      @media   ( max-width: 600px )
+        transform: translate(-25%, -50%)
+      @media   ( max-width: 320px )
+        transform: translate(-8px, -50%)
+    &_next
+      right: 0
+      transform: translate(50%, -50%)
+      @media   ( max-width: 600px )
+        transform: translate(35%, -50%)
+      @media   ( max-width: 600px )
+        transform: translate(25%, -50%)
+      @media   ( max-width: 320px )
+        transform: translate(8px, -50%)
+  &__swiper
+    position: relative

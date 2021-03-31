@@ -84,4 +84,17 @@ $(document).ready(function () {
   }
   );
   })
+
+
+  const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.case__btn_next',
+    prevEl: '.case__btn_prev',
+  },
+});
 });

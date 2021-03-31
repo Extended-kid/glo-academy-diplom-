@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <title>Ehya - blog</title>
 </head>
@@ -319,7 +320,146 @@
     </div>
     <!-- /.container -->
   </section>
-
+  <section class="case">
+    <div class="container case__container">
+      <a href="#" class="button case__button">Смотреть все
+        <img src="./img/arrow-right.svg" alt="Стрелочка вправо">
+      </a>
+      <h2 class="case__title title">
+        Примеры из практики
+      </h2>
+      <p class="case__description">Вот чем мы&nbsp;занимались в&nbsp;последнее время.</p>
+      <!-- Swiper -->
+      <div class="case__swiper">
+        <div class="button case__btn case__btn_prev">
+          <img src="./img/btn-prev.svg" alt="Кнопка предыдущий слайд">
+        </div>
+        <div class="button case__btn case__btn_next">
+          <img src="./img/btn-next.svg" alt="Кнопка следующий слайд">
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="case__featured featured">
+                <div class="featured__photo">
+                  <img src="./img/case-img.png" alt="Фото небоскребов">
+                </div>
+                <!-- /.featured__photo -->
+                <div class="featured__offer">
+                  <span class="featured__label featured__label_blue">
+                    Предложения
+                  </span>
+                  <h2 class="title featured__title featured__title_ml-2">
+                    Дешевые Авиабилеты&nbsp;- Отличный Способ Сэкономить
+                  </h2>
+                  <span class="featured__description">
+                    В&nbsp;этом цифровом поколении, где информацию можно легко получить за&nbsp;секунды, визитки ...
+                  </span>
+                  <div class="author featured__author">
+                    <a href="#" class="author__block">
+                      <img src="./img/avatars/author-viola.png" alt="Аватарка Виолы" class="author__avatar">
+                      <span class="author__name author__name_light">
+                        Viola Manisa
+                      </span>
+                      <div class="author__verified">
+                        <span class="author__writer author__writer_light">
+                          Verified writer
+                        </span>
+                      </div>
+                    </a>
+                    <!-- /.author__block -->
+                    <span class="author__visited author__visited_light">02 May</span>
+                  </div>
+                  <!-- /.author featured__author -->
+                </div>
+                <!-- /.featured__offer -->
+              </div>
+              <!-- /.hero__featured feautered -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="case__featured featured">
+                <div class="featured__photo">
+                  <img src="./img/featured-img.png" alt="Фото небоскребов">
+                </div>
+                <!-- /.featured__photo -->
+                <div class="featured__offer">
+                  <span class="featured__label featured__label_blue">
+                    Предложения
+                  </span>
+                  <h2 class="title featured__title featured__title_ml-2">
+                    Как защитить свою семью от&nbsp;угарного газа
+                  </h2>
+                  <span class="featured__description">
+                    Большинство людей будут работать на&nbsp;рабочих местах, которых сегодня ...
+                  </span>
+                  <div class="author featured__author">
+                    <a href="#" class="author__block">
+                      <img src="./img/avatars/avatar-lina.png" alt="Аватарка Лины" class="author__avatar">
+                      <span class="author__name author__name_light">
+                        Lina Hicks
+                      </span>
+                      <div class="author__verified">
+                        <span class="author__writer author__writer_light">
+                          Verified writer
+                        </span>
+                      </div>
+                    </a>
+                    <!-- /.author__block -->
+                    <span class="author__visited author__visited_light">02 May</span>
+                  </div>
+                  <!-- /.author featured__author -->
+                </div>
+                <!-- /.featured__offer -->
+              </div>
+              <!-- /.hero__featured feautered -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="case__featured featured">
+                <div class="featured__photo">
+                  <img src="./img/cards/card-4-bg.png" alt="Фоновая картинка карточки">
+                </div>
+                <!-- /.featured__photo -->
+                <div class="featured__offer">
+                  <span class="featured__label featured__label_blue">
+                    Предложения
+                  </span>
+                  <h2 class="title featured__title featured__title_ml-2">
+                    Будущее Данных
+                  </h2>
+                  <span class="featured__description">
+                    Благодаря нескончаемым объемам данных и количеству инсайтов ...
+                  </span>
+                  <div class="author featured__author">
+                    <a href="#" class="author__block">
+                      <img src="./img/avatars/avatar-tyler.png" alt="Аватарка Тайлера" class="author__avatar">
+                      <span class="author__name author__name_light">
+                        Tyler Murray
+                      </span>
+                      <div class="author__verified">
+                        <span class="author__writer author__writer_light">
+                          Verified writer
+                        </span>
+                      </div>
+                    </a>
+                    <!-- /.author__block -->
+                    <span class="author__visited author__visited_light">02 May</span>
+                  </div>
+                  <!-- /.author featured__author -->
+                </div>
+                <!-- /.featured__offer -->
+              </div>
+              <!-- /.hero__featured feautered -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+        </div>
+      </div>
+      <!-- /.swiper -->
+    </div>
+    <!-- /.container -->
+  </section>
 
   <div class="modal-2">
     <div class="modal-2__overlay">
@@ -366,7 +506,7 @@
   <!-- /.modal -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
   <script src="./js/jquery.validate.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
