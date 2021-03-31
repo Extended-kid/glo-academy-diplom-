@@ -1535,6 +1535,7 @@ form > label {
   width: 100%;
   object-fit: cover;
   z-index: -10;
+  transition: transform .2s;
 }
 
 .popular__cards {
@@ -1602,6 +1603,11 @@ form > label {
   .popular__link:nth-child(1) .popular__card-name {
     margin-top: 144px;
   }
+}
+
+.popular__link:hover .popular__bg {
+  filter: blur(1px);
+  transform: scale(1.05);
 }
 
 .popular__link:nth-child(2) .popular__card-name {
@@ -1864,6 +1870,7 @@ form > label {
   width: 100%;
   object-fit: cover;
   z-index: -10;
+  transition: transform .2s;
 }
 
 .recent__cards {
@@ -1953,6 +1960,11 @@ form > label {
     font-size: 14px;
     line-height: 24px;
   }
+}
+
+.recent__link:hover .recent__bg {
+  filter: blur(1px);
+  transform: scale(1.05);
 }
 
 .recent__card {

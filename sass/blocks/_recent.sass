@@ -76,6 +76,7 @@
     width: 100%
     object-fit: cover
     z-index: -10
+    transition: transform .2s
   &__cards
     display: grid
     grid-template-columns: repeat(3, 1fr )
@@ -115,6 +116,10 @@
         @media   ( max-width: 320px )
           font-size: 14px
           line-height: 24px
+    &:hover
+      .recent__bg
+        filter: blur(1px)
+        transform: scale(1.05)
   &__card
     position: relative
     display: flex
