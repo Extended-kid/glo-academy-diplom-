@@ -2710,7 +2710,7 @@ form > label {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 418px) {
   .all__recent-cards {
     gap: 16px;
   }
