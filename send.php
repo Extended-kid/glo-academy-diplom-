@@ -27,7 +27,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'mail.iljalobossok.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'ehya@iljalobossok.ru'; // Логин на почте
-    $mail->Password   = 'L8w5V6n3'; // Пароль на почте
+    $mail->Password   = 'P8k5R9s4'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->SMTPAutoTLS = false;
     $mail->SMTPSecure = false;

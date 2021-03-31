@@ -495,6 +495,7 @@ form > label {
     font-size: 10px;
     top: -13px;
     text-shadow: none;
+    animation-name: fade-small;
   }
 }
 
@@ -506,6 +507,17 @@ form > label {
   to {
     opacity: 1;
     top: -25px;
+  }
+}
+
+@keyframes fade-small {
+  from {
+    opacity: 0;
+    top: -10px;
+  }
+  to {
+    opacity: 1;
+    top: -13px;
   }
 }
 
@@ -1585,19 +1597,29 @@ form > label {
   .popular__cards {
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 35px;
-  }
-}
-
-@media (max-width: 418px) {
-  .popular__cards {
-    gap: 16px;
   }
 }
 
 .popular__link {
   display: block;
   text-decoration: none;
+}
+
+.popular__link:nth-child(1) {
+  margin-right: 35px;
+}
+
+@media (max-width: 992px) {
+  .popular__link:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 418px) {
+  .popular__link:nth-child(1) {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2433,13 +2455,11 @@ form > label {
   .all__cards {
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 35px;
   }
 }
 
 @media (max-width: 418px) {
   .all__cards {
-    gap: 16px;
     margin-bottom: 16px;
   }
 }
@@ -2447,6 +2467,23 @@ form > label {
 .all__link {
   display: block;
   text-decoration: none;
+}
+
+.all__link:nth-child(1) {
+  margin-right: 35px;
+}
+
+@media (max-width: 992px) {
+  .all__link:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 418px) {
+  .all__link:nth-child(1) {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 1200px) {
