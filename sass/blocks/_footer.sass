@@ -1,8 +1,11 @@
 .footer
   margin-top: -2px
-  padding-top: 127px
+  padding-top: 129px
   padding-bottom: 82px
   background-color: $footer-bg
+  @media screen and ( max-width: 400px )
+    padding-bottom: 78px
+    padding-top: 50px
   &__container
     position: relative
   &__br
@@ -12,9 +15,18 @@
     margin: 0 auto
     height: 1px
     background-color: rgba($text-main, 0.2)
+    @media screen and ( max-width: 400px )
+      display: none
   &__grid
     width: 100%
     display: flex
+    @media screen and ( max-width: 992px )
+      display: grid
+      grid-template-columns: repeat(4, 1fr )
+    @media screen and ( max-width: 768px )
+      gap: 25px
+    @media screen and ( max-width: 400px )
+      gap: 27px
   &__main
     display: flex
     flex-wrap: wrap
@@ -22,11 +34,27 @@
     max-width: 100%
     max-width: 295px
     max-height: 160px
+    @media screen and ( max-width: 992px )
+      order: 1
+      grid-column: span 4
+      margin-top: 25px
+      margin: 0 auto
+      justify-content: center
+    @media screen and ( max-width: 768px )
+      grid-template: span 2
+    @media screen and ( max-width: 400px )
+      margin-top: 9px
   &__logo
     flex-basis: 100%
     width: 90px
     height: 28px
     margin-bottom: 28px
+    @media screen and ( max-width: 992px )
+      flex-basis: auto
+      margin-bottom: 16px
+    @media screen and ( max-width: 400px )
+      width: 77px
+      margin-bottom: 11px
   &__description
     font-size: 15px
     line-height: 28px
@@ -34,6 +62,15 @@
     flex-basis: 100%
     margin-bottom: 30px
     max-width: 243px
+    @media screen and ( max-width: 992px )
+      text-align: center
+      max-width: 263px
+      flex-basis: auto
+      font-size: 14px
+      line-height: 28px
+      margin-bottom: 24px
+    @media screen and ( max-width: 400px )
+      margin-bottom: 18px
   &__logos
     display: flex
     width: 100%
@@ -41,7 +78,8 @@
     justify-content: space-between
     min-height: 21px
     align-items: center
-  &__icon
+  &__logo-link
+    margin-top: auto
   &__list
     margin: 0
     padding: 0
@@ -51,21 +89,69 @@
     display: flex
     flex-direction: column
     min-width: 195px
+    @media screen and ( max-width: 1200px )
+      min-width: 175px
+      max-width: 175px
+    @media screen and ( max-width: 768px )
+      grid-column: span 2
+    @media screen and ( max-width: 400px )
+      min-width: 0
     &_mr24
       max-width: 195px
-
+      @media screen and ( max-width: 1200px )
+        min-width: 195px
+    &_ml
+      @media screen and ( max-width: 400px )
+        margin-left: -6px
   &__title
     font-weight: bold
     font-size: 18px
     line-height: 25px
     color: $text-main
     margin-bottom: 30px
+    @media screen and ( max-width: 400px )
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 18px
   &__item
     margin-bottom: 22px
+    @media screen and ( max-width: 400px )
+      margin-bottom: 11px
     &_mb10
       margin-bottom: 7px
+      @media screen and ( max-width: 400px )
+        margin-bottom: 5px
+    &_hide
+      display: none
+      @media screen and ( max-width: 400px )
+        display: block
+        margin-bottom: 10px
+    &_vis
+      display: block
+      @media screen and ( max-width: 400px )
+        display: none
+
   &__link
     font-size: 16px
     line-height: 22px
     color: #959EAD
     text-decoration: none
+    @media screen and ( max-width: 400px )
+      font-size: 14px
+      line-height: 20px
+
+  &__like
+    margin: 0 auto
+    margin-top: 73px
+    margin-bottom: 24px
+    @media screen and ( max-width: 400px )
+      display: none
+  &__copyright
+    display: block
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $text-main
+    @media screen and ( max-width: 400px )
+      display: none
