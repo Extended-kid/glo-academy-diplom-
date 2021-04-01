@@ -1,14 +1,29 @@
 .hero
   height: 700px
-  background-image: url(../img/hero-bg.png)
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: top center
   display: flex
   flex-direction: column
   justify-content: flex-start
   align-items: center
   position: relative
+  @media screen and ( max-width: 1400px )
+    background-image: url(../img/hero-bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+
+  &__bg
+    position: absolute
+    width: 100%
+    top: 0
+    right: 0
+    left: 0
+    z-index: -50
+    @media screen and ( min-width: 1700px )
+      top: -100px
+    @media screen and ( min-width: 2000px )
+      top: -200px
+    @media screen and (  max-width: 1400px )
+      display: none
   &__title
     margin-top: 120px
     margin-bottom: 41px
