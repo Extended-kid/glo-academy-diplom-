@@ -86,7 +86,7 @@ $(document).ready(function () {
   })
 
 
-  const swiper = new Swiper('.swiper-container', {
+  const caseSwiper = new Swiper('.case__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -96,5 +96,19 @@ $(document).ready(function () {
     nextEl: '.case__btn_next',
     prevEl: '.case__btn_prev',
   },
+  });
+  
+  const articleSwiper = new Swiper('.article__swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.article__button_next',
+    prevEl: '.article__button_prev',
+    },
+    spaceBetween: 25,
+  effect: 'coverflow',
 });
 });

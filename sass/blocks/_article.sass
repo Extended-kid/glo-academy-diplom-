@@ -1,0 +1,327 @@
+$img-h: 360px
+$img-h-600m: 250px
+$img-h-400m: 200px
+.article
+  max-width: 750px
+  margin: 0 auto
+  position: relative
+  @media screen and ( max-width: 320px )
+    padding-top: 40px
+  &__parag
+    font-size: 16px
+    line-height: 26px
+    color: $text-main
+    @media screen and ( max-width: 400px )
+      font-size: 12px
+      line-height: 22px
+    &_large
+      font-size: 20px
+      line-height: 32px
+      margin-bottom: 20px
+      @media screen and ( max-width: 400px )
+        margin-bottom: 41px
+        font-size: 16px
+        line-height: 28px
+    &_mb10
+      margin-bottom: 10px
+      line-height: 28px
+      @media screen and ( max-width: 400px )
+        font-size: 12px
+        line-height: 22px
+    &_mb12
+      margin-bottom: 14px
+    &__mb20
+      margin-bottom: 20px
+
+    &_mb28
+      margin-bottom: 28px
+      line-height: 28px
+      @media screen and ( max-width: 400px )
+        font-size: 12px
+        line-height: 22px
+        margin-bottom: 72px
+    &_mb16
+      margin-bottom: 16px
+    &_mb104
+      margin-bottom: 104px
+      line-height: 28px
+      @media screen and ( max-width: 400px )
+        font-size: 12px
+        line-height: 22px
+        margin-bottom: 29px
+    &_bottom
+      line-height: 28px
+      margin-bottom: 36px
+      @media screen and ( max-width: 930px )
+        margin-bottom: 128px
+      @media screen and ( max-width: 400px )
+        font-size: 12px
+        line-height: 22px
+  &__author
+    margin-bottom: 41px
+    @media screen and ( max-width: 400px )
+      margin-bottom: 32px
+    &_border
+      padding: 21px 0
+      border-top: 1px solid $bg
+      border-bottom: 1px solid $bg
+      @media screen and ( max-width: 400px )
+        padding: 17px 0
+  &__reference
+    width: 100%
+    border-radius: 16px
+    overflow: hidden
+    margin-bottom: 12px
+    height: $img-h
+    object-fit: cover
+    line-height: 0
+    @media screen and ( max-width: 600px )
+      height: $img-h-600m
+    @media screen and ( max-width: 400px )
+      height: $img-h-400m
+      margin-bottom: 8px
+  &__description
+    font-size: 14px
+    line-height: 20px
+    color: $text-main
+    display: block
+    text-align: center
+    margin-bottom: 19px
+    @media screen and ( max-width: 400px )
+      margin-bottom: 58px
+      font-size: 12px
+      line-height: 16px
+    &_mb0
+      @media screen and ( max-width: 400px )
+        margin-bottom: 0
+  &__title
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $text-dark
+    margin-bottom: 1px
+    margin-left: 1px
+    @media screen and ( max-width: 400px )
+      font-size: 21px
+      line-height: 32px
+    &_ml0
+      margin-left: 0
+      @media screen and ( max-width: 500px )
+        word-wrap: break-word
+      @media screen and ( max-width: 400px )
+        font-size: 24px
+        line-height: 32px
+        margin-top: 25px
+        margin-bottom: 7px
+    &_mb17
+      @media screen and ( max-width: 400px )
+        margin-bottom: 17px
+  &__subtitle
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $text-dark
+    margin-bottom: 4px
+    @media screen and ( max-width: 400px )
+      font-size: 20px
+      line-height: 24px
+    &_mb5
+      margin-bottom: 6px
+      @media screen and ( max-width: 400px )
+        margin-top: 39px
+        margin-bottom: 10px
+    &_mb16
+      margin-bottom: 16px
+      @media screen and ( max-width: 400px )
+        margin-top: 22px
+        margin-bottom: 10px
+    &_mb10
+      margin-bottom: 10px
+      @media screen and ( max-width: 400px )
+        font-size: 20px
+        line-height: 24px
+        margin-top: 31px
+        margin-bottom: 14px
+    &_bottom
+      margin-top: 48px
+      margin-bottom: 16px
+      @media screen and ( max-width: 400px )
+        margin-top: 34px
+        margin-bottom: 12px
+  &__slider
+    position: relative
+    height: $img-h
+    margin-bottom: 12px
+    @media screen and ( max-width: 600px )
+      height: $img-h-600m
+    @media screen and ( max-width: 400px )
+      height: $img-h-400m
+      margin-bottom: 8px
+  &__button
+    position: absolute
+    background-color: transparent
+    padding: 0
+    z-index: 10
+    top: 50%
+    @media screen and ( max-width: 600px )
+      width: 39px
+      height: 40px
+    &_prev
+      left: 0
+      transform: translate(-50%,-50%)
+      @media screen and ( max-width: 600px )
+        transform: translate(-35%,-50%)
+      @media screen and ( max-width: 320px )
+        transform: translate(-50%,-50%)
+    &_next
+      right: 0
+      transform: translate(50%,-50%)
+      @media screen and ( max-width: 600px )
+        transform: translate(35%,-50%)
+      @media screen and ( max-width: 320px )
+        transform: translate(50%,-50%)
+
+  &__slide
+    border-radius: 16px
+    overflow: hidden
+    width: 100%
+    height: $img-h
+    @media screen and ( max-width: 600px )
+      height: $img-h-600m
+    @media screen and ( max-width: 400px )
+      height: $img-h-400m
+    & > img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__wrapper
+    height: 100%
+  &__quote
+    background-color: $btn-clr
+    border-radius: 16px
+    overflow: hidden
+    position: relative
+    padding: 57px 64px 75px
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media screen and ( max-width: 400px )
+      padding: 48px 24px 75px
+    @media screen and ( max-width: 320px )
+      border-radius: 0
+  &__oval
+    position: absolute
+    top: 0
+    right: 0
+    @media screen and ( max-width: 400px )
+      transform: scale(0.56325)
+      top: -60px
+      right: -70px
+  &__left-quote
+    display: block
+    margin-bottom: 26px
+    width: 40px
+    height: 46px
+    @media screen and ( max-width: 400px )
+      margin-bottom: 30px
+  &__quote-text
+    width: 100%
+    font-weight: bold
+    font-size: 36px
+    line-height: 60px
+    text-align: center
+    letter-spacing: 0.09px
+    color: $text-white
+    margin-bottom: 16px
+    @media screen and ( max-width: 400px )
+      font-size: 23px
+      line-height: 30px
+      letter-spacing: 1px
+      margin-bottom: 62px
+  &__quote-description
+    max-width: 577px
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: $text-white
+    @media screen and ( max-width: 400px )
+      font-size: 16px
+      line-height: 22px
+  &__quote-avatar
+    width: 120px
+    height: 120px
+    border-radius: 8px
+    position: absolute
+    right: 50%
+    bottom: 0
+    transform: translate(50%,50%)
+    @media screen and ( max-width: 400px )
+      width: 96px
+      height: 96px
+  &__wrap
+    position: relative
+    margin-bottom: 116px
+    @media screen and ( max-width: 320px )
+      margin-left: -24px
+      margin-right: -24px
+      margin-bottom: 110px
+  &__photos
+    margin-top: 28px
+    display: grid
+    gap: 30px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    max-height: 480px
+    margin-bottom: 12px
+    @media screen and ( max-width: 400px )
+      margin-top: 91px
+      gap: 12px
+      max-height: 288px
+      grid-template-rows: minmax(176px, 1fr) 1fr
+  &__photo
+    border-radius: 16px
+    overflow: hidden
+    & > img
+      object-fit: cover
+      width: 100%
+      height: 100%
+    &:nth-child(1)
+      grid-row: span 2
+      @media screen and ( max-width: 400px )
+        grid-row: span 1
+        grid-column: span 2
+  &__logos
+    position: absolute
+    display: flex
+    left: -150px
+    flex-direction: column
+    align-items: center
+    @media screen and ( max-width: 1200px )
+      left: -100px
+    @media screen and ( max-width: 930px )
+      left: 0
+      bottom: 124px
+      flex-direction: row
+    @media screen and ( max-width: 400px )
+      bottom: 104px
+    & > a
+      margin-bottom: 29px
+      @media screen and ( max-width: 930px )
+        margin-bottom: 0
+        margin-right: 24px
+      & > img
+        @media screen and ( max-width: 930px )
+          margin-top: auto
+          height: 17px
+
+  &__share
+    margin-bottom: 33px
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $text-main
+    @media screen and ( max-width: 930px )
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 0
+      margin-right: 24px
