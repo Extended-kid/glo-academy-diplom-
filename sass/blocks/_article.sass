@@ -65,6 +65,7 @@ $img-h-400m: 200px
       padding: 21px 0
       border-top: 1px solid $bg
       border-bottom: 1px solid $bg
+      margin-bottom: 0
       @media screen and ( max-width: 400px )
         padding: 17px 0
   &__reference
@@ -293,19 +294,23 @@ $img-h-400m: 200px
   &__logos
     position: absolute
     display: flex
-    left: -150px
+    top: -3px
+    left: -195px
     flex-direction: column
     align-items: center
     @media screen and ( max-width: 1200px )
+      top: 0
       left: -100px
     @media screen and ( max-width: 930px )
       left: 0
+      top: auto
       bottom: 124px
       flex-direction: row
     @media screen and ( max-width: 400px )
       bottom: 104px
     & > a
-      margin-bottom: 29px
+      margin-bottom: 33px
+      margin-right: 5px
       @media screen and ( max-width: 930px )
         margin-bottom: 0
         margin-right: 24px
@@ -315,7 +320,7 @@ $img-h-400m: 200px
           height: 17px
 
   &__share
-    margin-bottom: 33px
+    margin-bottom: 35px
     font-weight: 600
     font-size: 16px
     line-height: 22px
