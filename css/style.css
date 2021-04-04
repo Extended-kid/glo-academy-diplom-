@@ -553,6 +553,46 @@ textarea {
   resize: horizontal;
 }
 
+.back_to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  background: #0D2436;
+  border: 1px solid rgba(90, 113, 132, 0.4);
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .back_to_top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .back_to_top {
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+}
+
+.back_to_top:hover {
+  background: rgba(13, 36, 54, 0.5);
+}
+
+.back_to_top-show {
+  display: block;
+}
+
 .hero {
   height: 700px;
   display: flex;
