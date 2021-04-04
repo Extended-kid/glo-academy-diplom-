@@ -529,6 +529,30 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
+a:active, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
 .hero {
   height: 700px;
   display: flex;
@@ -896,6 +920,7 @@ button::-moz-focus-inner {
   }
   .header__menu-btn {
     display: block;
+    z-index: 1100;
   }
 }
 
@@ -1342,9 +1367,12 @@ button::-moz-focus-inner {
   left: 100%;
   display: none;
   width: 100%;
+  height: 100%;
+  top: 0;
   z-index: 1000;
   background-color: rgba(24, 59, 86, 0.9);
   backdrop-filter: blur(10px);
+  padding-top: 63px;
   padding-left: 30px;
   transition: left 0.5s ease;
 }
