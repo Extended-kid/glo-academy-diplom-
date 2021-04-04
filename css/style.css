@@ -547,6 +547,18 @@ form > label {
   height: 641px;
 }
 
+@media screen and (min-width: 1600px) {
+  .hero_detail {
+    background-position: center -100px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .hero_detail {
+    background-position: center -200px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .hero_detail {
     height: 300px;
