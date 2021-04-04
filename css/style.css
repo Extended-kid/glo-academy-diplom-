@@ -521,6 +521,14 @@ form > label {
   }
 }
 
+button:active, button:focus {
+  outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
 .hero {
   height: 700px;
   display: flex;
