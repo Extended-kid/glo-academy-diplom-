@@ -490,15 +490,6 @@ form > label {
   animation-duration: 0.2s;
 }
 
-@media (max-width: 400px) {
-  form > label {
-    font-size: 10px;
-    top: -13px;
-    text-shadow: none;
-    animation-name: fade-small;
-  }
-}
-
 @keyframes fade {
   from {
     opacity: 0;

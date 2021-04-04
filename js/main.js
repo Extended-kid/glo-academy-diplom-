@@ -76,9 +76,9 @@ $(document).ready(function () {
   $('.form').each(function() {
     $(this).validate({
     messages: {
-      email: {
-        required: "Specify your email",
-        email: "Invalid email adress"
+      mail: {
+        required: "Введите свой Email",
+        email: "Неверный адрес"
       },
     }
   }
