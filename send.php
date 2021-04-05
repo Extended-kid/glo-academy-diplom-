@@ -6,6 +6,7 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $mail = $_POST['mail'];
+$comment = $_POST['comment'];
 
 // Формирование самого письма
 $title = "Новое обращение Ehya - blog";
@@ -13,7 +14,10 @@ $body = "
 <h2>Новое письмо</h2>
 <b>Email:</b><br> $mail
 ";
-
+$commentBody = "
+<h2>Новое письмо</h2>
+<b>Comment:</b><br> $comment
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -39,8 +43,13 @@ try {
 
     // Отправка сообщения
     $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;
+    $mail->Subject = $title;\
+    if (empty($mail)){
+        $mail->Body = $body;
+    } else{
+        $mail->Body = $commentBody;
+    }
+    
     
     
     // Проверяем отравленность сообщения
@@ -53,4 +62,9 @@ try {
 }
 
 // Отображение результата
-  header('Location: thankyou.html');
+
+if (empty($mail)){
+        header('Location: thankyou.html');
+    } else{
+        header('Location: detail.html');
+    }
