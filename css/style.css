@@ -2019,6 +2019,7 @@ textarea {
 
 @media (max-width: 418px) {
   .popular__card {
+    border-radius: 12px;
     max-height: 320px;
     min-height: 320px;
   }
@@ -2327,6 +2328,7 @@ textarea {
 
 @media (max-width: 600px) {
   .recent__card {
+    border-radius: 12px;
     width: 100%;
   }
 }
@@ -2926,6 +2928,7 @@ textarea {
 
 @media (max-width: 418px) {
   .all__card {
+    border-radius: 12px;
     max-height: 320px;
     min-height: 320px;
   }
@@ -3168,6 +3171,12 @@ textarea {
 @media (max-width: 600px) {
   .all__recent-card {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .all__recent-card {
+    border-radius: 12px;
   }
 }
 
