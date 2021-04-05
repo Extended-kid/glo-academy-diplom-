@@ -89,15 +89,27 @@
     &_prev
       left: 0
       transform: translate(-50%, -50%)
+      @media (max-width: 1250px) and ( min-width: 1200px )
+        transform: translate(-35%, -50%)
+      @media (max-width: 1030px) and ( min-width: 992px )
+        transform: translate(-35%, -50%)
+      @media (max-width: 1010px) and ( min-width: 992px )
+        transform: translate(-25%, -50%)
       @media   ( max-width: 600px )
         transform: translate(-35%, -50%)
       @media   ( max-width: 600px )
         transform: translate(-25%, -50%)
-      @media   ( max-width: 320px )
+      @media   ( max-width: 600px )
         transform: translate(-8px, -50%)
     &_next
       right: 0
       transform: translate(50%, -50%)
+      @media (max-width: 1250px) and ( min-width: 1200px )
+        transform: translate(35%, -50%)
+      @media (max-width: 1030px) and ( min-width: 992px )
+        transform: translate(35%, -50%)
+      @media (max-width: 1010px) and ( min-width: 992px )
+        transform: translate(25%, -50%)
       @media   ( max-width: 600px )
         transform: translate(35%, -50%)
       @media   ( max-width: 600px )

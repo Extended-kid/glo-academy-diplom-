@@ -170,14 +170,18 @@ $img-h-400m: 200px
     &_prev
       left: 0
       transform: translate(-50%,-50%)
-      @media screen and ( max-width: 600px )
+      @media (max-width: 770px) and ( min-width: 768px )
+        transform: translate(-40%, -50%)
+      @media screen and ( max-width: 630px )
         transform: translate(-35%,-50%)
       @media screen and ( max-width: 320px )
         transform: translate(-50%,-50%)
     &_next
       right: 0
       transform: translate(50%,-50%)
-      @media screen and ( max-width: 600px )
+      @media (max-width: 770px) and ( min-width: 768px )
+        transform: translate(40%, -50%)
+      @media screen and ( max-width: 630px )
         transform: translate(35%,-50%)
       @media screen and ( max-width: 320px )
         transform: translate(50%,-50%)

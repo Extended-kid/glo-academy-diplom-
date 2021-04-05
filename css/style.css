@@ -710,7 +710,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 930px) {
   .hero__title_detail {
     width: 100%;
   }
@@ -2560,6 +2560,24 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1250px) and (min-width: 1200px) {
+  .case__btn_prev {
+    transform: translate(-35%, -50%);
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 992px) {
+  .case__btn_prev {
+    transform: translate(-35%, -50%);
+  }
+}
+
+@media (max-width: 1010px) and (min-width: 992px) {
+  .case__btn_prev {
+    transform: translate(-25%, -50%);
+  }
+}
+
 @media (max-width: 600px) {
   .case__btn_prev {
     transform: translate(-35%, -50%);
@@ -2572,7 +2590,7 @@ textarea {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
   .case__btn_prev {
     transform: translate(-8px, -50%);
   }
@@ -2581,6 +2599,24 @@ textarea {
 .case__btn_next {
   right: 0;
   transform: translate(50%, -50%);
+}
+
+@media (max-width: 1250px) and (min-width: 1200px) {
+  .case__btn_next {
+    transform: translate(35%, -50%);
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 992px) {
+  .case__btn_next {
+    transform: translate(35%, -50%);
+  }
+}
+
+@media (max-width: 1010px) and (min-width: 992px) {
+  .case__btn_next {
+    transform: translate(25%, -50%);
+  }
 }
 
 @media (max-width: 600px) {
@@ -4139,7 +4175,13 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 770px) and (min-width: 768px) {
+  .article__button_prev {
+    transform: translate(-40%, -50%);
+  }
+}
+
+@media screen and (max-width: 630px) {
   .article__button_prev {
     transform: translate(-35%, -50%);
   }
@@ -4156,7 +4198,13 @@ textarea {
   transform: translate(50%, -50%);
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 770px) and (min-width: 768px) {
+  .article__button_next {
+    transform: translate(40%, -50%);
+  }
+}
+
+@media screen and (max-width: 630px) {
   .article__button_next {
     transform: translate(35%, -50%);
   }
