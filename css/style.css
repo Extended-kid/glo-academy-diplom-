@@ -544,7 +544,7 @@ textarea {
   resize: horizontal;
 }
 
-.back_to_top {
+.back-to-top {
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -562,26 +562,45 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .back_to_top {
+  .back-to-top {
     bottom: 20px;
     right: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .back_to_top {
+  .back-to-top {
     width: 30px;
     height: 30px;
     line-height: 25px;
   }
 }
 
-.back_to_top:hover {
+.back-to-top:hover {
   background: rgba(13, 36, 54, 0.5);
 }
 
-.back_to_top-show {
+.back-to-top-show {
   display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .animation-button {
+    transition: border 0.2s ease;
+  }
+  .animation-button:hover {
+    border: 2px solid rgba(21, 101, 216, 0.4);
+    color: rgba(21, 101, 216, 0.8);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .animation-slide > img {
+    transition: transform 0.2s ease;
+  }
+  .animation-slide > img:hover {
+    transform: scale(1.05);
+  }
 }
 
 .hero {
@@ -745,6 +764,15 @@ textarea {
   border-radius: 8px;
 }
 
+@media screen and (min-width: 992px) {
+  .hero__button {
+    transition: color 0.2s ease;
+  }
+  .hero__button:hover {
+    background-color: rgba(21, 101, 216, 0.8);
+  }
+}
+
 .hero__popular-tags {
   display: flex;
   width: 100%;
@@ -780,6 +808,16 @@ textarea {
   text-decoration: none;
 }
 
+@media screen and (min-width: 992px) {
+  .hero__tag {
+    transition: border 0.2s ease;
+  }
+  .hero__tag:hover {
+    transform: scale(1.03);
+    border: 1px solid white;
+  }
+}
+
 .hero__item:nth-child(2) > a {
   padding: 5px 17px;
 }
@@ -809,6 +847,15 @@ textarea {
 
 .header {
   width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .header__logo {
+    transition: transform 0.2s ease;
+  }
+  .header__logo:hover {
+    transform: scale(1.05);
+  }
 }
 
 .header__navbar {
@@ -869,6 +916,12 @@ textarea {
   line-height: 22px;
 }
 
+@media screen and (min-width: 992px) {
+  .header__link:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
 .header__link_drop {
   color: #E5EAF4;
 }
@@ -885,6 +938,15 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+}
+
+@media screen and (min-width: 992px) {
+  .header__button {
+    transition: transform 0.4s ease;
+  }
+  .header__button:hover {
+    border: 3px solid #1565D8;
+  }
 }
 
 .header__down {
@@ -3295,6 +3357,15 @@ textarea {
   line-height: 25px;
 }
 
+@media screen and (min-width: 992px) {
+  .subscribe__button {
+    transition: background-color 0.2s ease;
+  }
+  .subscribe__button:hover {
+    background-color: rgba(21, 101, 216, 0.7);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .subscribe__button {
     height: 56px;
@@ -3528,6 +3599,16 @@ textarea {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .footer__logo > img {
+    transition: transform 0.2s ease;
+  }
+}
+
+.footer__logo > img:hover {
+  transform: scale(1.05);
+}
+
 .footer__description {
   font-size: 15px;
   line-height: 28px;
@@ -3672,11 +3753,29 @@ textarea {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .footer__icon {
+    transition: transform 0.2s ease;
+  }
+  .footer__icon:hover {
+    transform: scale(1.2);
+  }
+}
+
 .footer__link {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
   text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  .footer__link {
+    transition: transform 0.2s ease;
+  }
+  .footer__link:hover {
+    color: rgba(149, 158, 173, 0.6);
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -3690,6 +3789,15 @@ textarea {
   margin: 0 auto;
   margin-top: 73px;
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .footer__like {
+    transition: transform 0.2s ease;
+  }
+  .footer__like:hover {
+    transform: scale(1.4);
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -4292,6 +4400,15 @@ textarea {
   .article__logos > a > img {
     margin-top: auto;
     height: 17px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article__icon > img {
+    transition: transform 0.2s ease;
+  }
+  .article__icon > img:hover {
+    transform: scale(1.2);
   }
 }
 

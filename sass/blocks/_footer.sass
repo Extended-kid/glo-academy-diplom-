@@ -55,6 +55,11 @@
     @media screen and ( max-width: 400px )
       width: 77px
       margin-bottom: 11px
+    & > img
+      @media screen and ( min-width: 992px )
+        transition: transform 0.2s ease
+      &:hover
+        transform: scale(1.05)
   &__description
     font-size: 15px
     line-height: 28px
@@ -130,12 +135,20 @@
       display: block
       @media screen and ( max-width: 400px )
         display: none
-
+  &__icon
+    @media screen and ( min-width: 992px )
+      transition: transform 0.2s ease
+      &:hover
+        transform: scale(1.2)
   &__link
     font-size: 16px
     line-height: 22px
     color: #959EAD
     text-decoration: none
+    @media screen and ( min-width: 992px )
+      transition: transform 0.2s ease
+      &:hover
+        color: rgba(#959EAD,0.6)
     @media screen and ( max-width: 400px )
       font-size: 14px
       line-height: 20px
@@ -144,6 +157,10 @@
     margin: 0 auto
     margin-top: 73px
     margin-bottom: 24px
+    @media screen and ( min-width: 992px )
+      transition: transform 0.2s ease
+      &:hover
+        transform: scale(1.4)
     @media screen and ( max-width: 400px )
       display: none
   &__copyright

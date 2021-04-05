@@ -80,6 +80,10 @@
     font-weight: bold
     font-size: 18px
     line-height: 25px
+    @media screen and ( min-width: 992px )
+      transition: background-color 0.2s ease
+      &:hover
+        background-color: rgba($btn-clr, 0.7)
     @media screen and ( max-width: 600px  )
       height: 56px
       max-width: none
