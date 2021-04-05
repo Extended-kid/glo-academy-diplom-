@@ -1634,6 +1634,14 @@ textarea {
   right: 18px;
   background: transparent;
   border: none;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+@media screen and (min-width: 992px) {
+  .modal__close:hover, .modal-2__close:hover {
+    transform: rotate(180deg);
+  }
 }
 
 .modal__title, .modal-2__title {
@@ -1701,12 +1709,19 @@ textarea {
   color: #FFFFFF;
   background-color: #1565D8;
   border-radius: 8px;
+  transition: background-color 0.2s ease;
 }
 
 @media (max-width: 600px) {
   .modal__button, .modal-2__button {
     flex-basis: 100%;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal__button:hover, .modal-2__button:hover {
+    background-color: rgba(21, 101, 216, 0.8);
   }
 }
 

@@ -46,6 +46,11 @@
     right: 18px
     background: transparent
     border: none
+    cursor: pointer
+    transition: transform 0.4s ease
+    &:hover
+      @media screen and ( min-width: 992px )
+        transform: rotate(180deg)
   &__title
     font-weight: bold
     font-size: 28px
@@ -93,9 +98,13 @@
     color: $text-white
     background-color: $btn-clr
     border-radius: 8px
+    transition: background-color 0.2s ease
     @media   ( max-width: 600px )
       flex-basis: 100%
       margin: 0
+    &:hover
+      @media screen and ( min-width: 992px )
+        background-color: rgba($btn-clr, 0.8)
   &__description
     font-size: 16px
     line-height: 28px
