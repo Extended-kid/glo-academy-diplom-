@@ -5,14 +5,14 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$mail = $_POST['mail'];
+$email = $_POST['mail'];
 $comment = $_POST['comment'];
 
 // Формирование самого письма
 $title = "Новое обращение Ehya - blog";
 $body = "
 <h2>Новое письмо</h2>
-<b>Email:</b><br> $mail
+<b>Email:</b><br> $email
 ";
 $commentBody = "
 <h2>Новое письмо</h2>
@@ -43,13 +43,14 @@ try {
 
     // Отправка сообщения
     $mail->isHTML(true);
-    $mail->Subject = $title;\
-    if (empty($mail)){
+    $mail->Subject = $title;
+    if (!(empty($mail))){
         $mail->Body = $body;
-    } else{
+    } 
+    if (!(empty($comment))){
         $mail->Body = $commentBody;
     }
-    
+
     
     
     // Проверяем отравленность сообщения
@@ -63,8 +64,9 @@ try {
 
 // Отображение результата
 
-if (empty($mail)){
-        header('Location: thankyou.html');
-    } else{
-        header('Location: detail.html');
-    }
+if (!(empty($email)))
+{
+    header('Location: thankyou.html');
+} else{
+    header('Location: comment.html');
+}

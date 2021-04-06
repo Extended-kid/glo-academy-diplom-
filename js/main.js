@@ -79,6 +79,10 @@ $(document).ready(function () {
       mail: {
         required: "Введите свой Email",
         email: "Неверный адрес"
+        },
+      comment: {
+        required: "Введите коментарий",
+        maxlength: "Слишком длинное сообщение"
       },
     }
   }
@@ -142,5 +146,11 @@ $(document).ready(function () {
 
       window.addEventListener('scroll', trackScroll);
       goTopBtn.addEventListener('click', backToTop);
-    })();
+  })();
+  
+
+
+  $(".comment__button").on('click', function () {
+    $(".comment__input").value = "";
+  })
 });
